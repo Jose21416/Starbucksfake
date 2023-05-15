@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starbucks Website Landing Page</title>
+  <link rel="stylesheet" href="style.css"/>
+  
+</head>
+
+<body>
+
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#"><img src="./img/logo.png" class="logo"></a>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Menú</a></li>
+        <li><a href="#">¿Qué hay de nuevo?</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>Esto no solo es un café<br>Es <span>Starbucks</span></h2>
+        <p>Starbucks es una de las empresas de café con mayor éxito en todo el mundo, 
+          hoy en día se puede encontrar locales de esta compañía casi en cualquier rincón 
+          del mundo, su origen se remonta al año 1971 cuando su primer local se estableció
+          en Pike Place Market en Seattle, Estados Unidos por iniciativa del profesor
+          Jerry Baldwin de origen inglés, el profesor de historia Zev Siegel y Gordon Bowker
+          quien fue escritor, los tres se asociaron para iniciar este negocio influenciados
+          por Alfred Peet quien fue un popular empresario de café, el nombre estuvo
+          inspirado en la novela famosa «Mobby Dick» aunque inicialmente su nombre
+          era más largo «Starbucks Coffee Tea and Spices» y en ese entonces
+          se comercializaba granos de café, té y especias sin embargo en 1982 Howard
+          Schultz se sumó al proyecto en 1982 y luego de hacer un viaje a Milán, Italia
+          vio un gran potencial en la empresa ya que había quedado impresionado por
+          los pequeños locales de café que vio durante su viaje.</p>
+           <a href="#">Leer más</a>
+      </div>
+    <div class="imgBox">
+      <img src="img/img1.png" class="Starbucks"/>
+    </div>
+  </div>
+  <ul class="thumb">
+    <li><img src="./img/thumb1.png" onclick="imgSlider('./img/img1.png');changeCircleColor('#017143')"></li>
+    <li><img src="./img/thumb2.png" onclick="imgSlider('./img/img2.png');changeCircleColor('#eb7495')"></li>
+    <li><img src="./img/thumb3.png" onclick="imgSlider('./img/img3.png');changeCircleColor('#d752b1')"></li>
+  </ul>
+  <ul class="sci">
+    <li><a href="#"><img src="./img/facebook.png"/></a></li>
+    <li><a href="#"><img src="./img/twitter.png"/></a></li>
+    <li><a href="#"><img src="./img/instagram.png"/></a></li>
+  </ul>
+  </section>
+
+  <script type="text/javascript">
+    function imgSlider(anything){
+    document.querySelector('.Starbucks').src = anything
+    }
+
+    function changeCircleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+  </script>
+  
+</body>
+
+</html>
